@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
+/* line 2, ../../sass/Layout/_reset.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: padding-box;
+  list-style: none;
+  text-decoration: none;
+}
+/* line 9, ../../sass/Layout/_reset.scss */
+* a {
+  color: #000;
+}
+
+/* line 14, ../../sass/Layout/_reset.scss */
+body {
+  background-color: #f1ebeb;
+}
+
+/* Scss Document */
+/* line 4, ../../sass/Layout/_header.scss */
+.wrapper {
+  position: relative;
+}
+
+/* line 8, ../../sass/Layout/_header.scss */
+.nav {
+  background-color: #161616;
+  box-shadow: 0px 3px 9.7px 0.3px rgba(0, 0, 0, 0.12);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 72px;
+  z-index: 134;
+}
+/* line 17, ../../sass/Layout/_header.scss */
+.nav .logo {
+  margin-left: 26px;
+  margin-top: 16px;
+}
+/* line 21, ../../sass/Layout/_header.scss */
+.nav .location_main {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(143, 143, 143, 0.5);
+  border-radius: 2px;
+  background-color: #161616;
+  width: 219px;
+  height: 38px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 22px;
+}
+/* line 33, ../../sass/Layout/_header.scss */
+.nav .location_main img {
+  margin-top: 9px;
+  margin-left: 10px;
+}
+/* line 37, ../../sass/Layout/_header.scss */
+.nav .location_main input {
+  height: inherit;
+  width: 183px;
+  border: none;
+  background: none;
+  float: right;
+}
+/* line 43, ../../sass/Layout/_header.scss */
+.nav .location_main input::placeholder {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+/* line 51, ../../sass/Layout/_header.scss */
+.nav .button1 {
+  border-radius: 2px;
+  background-color: #ec6811;
+  width: 149px;
+  height: 38px;
+  z-index: 142;
+  margin-right: 22px;
+  margin-top: 20px;
+  float: right;
+}
+/* line 61, ../../sass/Layout/_header.scss */
+.nav .button1 .button1_text {
+  display: block;
+  font-size: 14PX;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 12px;
+  margin-left: 17px;
+}
+
+/* line 1, ../../sass/Layout/_slider.scss */
+#tcf-slider {
+  margin-top: 72px;
+}
+
+/* line 5, ../../sass/Layout/_slider.scss */
+.main_search_heading {
+  position: absolute;
+  top: 270px;
+  z-index: 1000;
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Roboto";
+  color: white;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  z-index: 79;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 19, ../../sass/Layout/_slider.scss */
+.search_main {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 334px;
+  width: 100%;
+}
+/* line 26, ../../sass/Layout/_slider.scss */
+.search_main .search_sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* line 30, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search_place {
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2), inset 0px 4px 8px 0px rgba(0, 0, 0, 0.34);
+  width: 265px;
+  height: 44px;
+  z-index: 160;
+}
+/* line 37, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search_place img {
+  margin-top: 13px;
+  margin-left: 12px;
+}
+/* line 42, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search_activities {
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2), inset 0px 4px 8px 0px rgba(0, 0, 0, 0.34);
+  width: 275px;
+  height: 44px;
+  z-index: 114;
+  margin-left: 22px;
+  margin-right: 11px;
+}
+/* line 51, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search_activities img {
+  margin-top: 13px;
+  margin-left: 12px;
+}
+/* line 57, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search_submit {
+  border-radius: 2px;
+  background-color: #ec6811;
+  box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2);
+  width: 114px;
+  height: 43px;
+  z-index: 169;
+  position: relative;
+}
+/* line 65, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search_submit .search_submit_txt {
+  font-size: 16px;
+  display: block;
+  color: #fff;
+  margin-top: 14px;
+  margin-left: 27px;
+}
+/* line 73, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search_place_select {
+  font-size: 14PX;
+  color: #FFF;
+  height: inherit;
+  width: 239px;
+  float: right;
+  border: 0px;
+  background: transparent;
+}
+/* line 84, ../../sass/Layout/_slider.scss */
+.search_main .search_sub .search2_text {
+  font-size: 14PX;
+  color: #FFF;
+  height: inherit;
+  width: 429px;
+  float: right;
+  border: 0px;
+  background: transparent;
+}
+
+/* line 1, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 4, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icon_header, .main_iconwrap .icon_subheader {
+  font-size: 24px;
+  font-weight: 900;
+  color: #161616;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  z-index: 244;
+  margin-top: 42px;
+}
+/* line 13, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icon_subheader {
+  margin-top: 22px;
+  font-weight: 500;
+}
+/* line 21, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 45px;
+}
+/* line 27, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons .icon_container {
+  margin-top: 14px;
+  background-color: transparent;
+  width: 188px;
+  height: 158px;
+  z-index: 5;
+  /*margin-left: 38px;*/
+}
+/* line 34, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons .icon_container img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 0 auto;
+  margin-top: 40px;
+}
+/* line 41, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons .icon_container .icon_text {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #161616;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  text-align: center;
+}
+/* line 48, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons .icon_container .icon_text a:hover {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #161616;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  position: absolute;
+  left: 205.203px;
+  top: 819.7px;
+  z-index: 12;
+}
+/* line 63, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons #gym1:hover {
+  content: url(../images/gym1.png);
+}
+/* line 66, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons #yoga1:hover {
+  content: url(../images/yoga1.png);
+}
+/* line 69, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons #zumba1:hover {
+  content: url(../images/zumba1.png);
+}
+/* line 72, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons #karate1:hover {
+  content: url(../images/karate1.png);
+}
+/* line 75, ../../sass/Layout/_mainicons.scss */
+.main_iconwrap .icons #kids1:hover {
+  content: url(../images/kids1.png);
+}
+
+/* line 1, ../../sass/Layout/_mainpass.scss */
+.gym_pass {
+  background-color: #161616;
+  min-height: 349px;
+}
+/* line 6, ../../sass/Layout/_mainpass.scss */
+.gym_pass .gym_heading {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  z-index: 244;
+  padding-top: 48px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+/* line 19, ../../sass/Layout/_mainpass.scss */
+.gym_pass #gym_pass_holder {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+/* line 28, ../../sass/Layout/_mainpass.scss */
+.gym_pass #gym_pass_holder .gym_pass_sub {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 253px;
+  height: 161px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  box-shadow: 0px 5px 26.56px 5.44px rgba(0, 0, 0, 0.26);
+}
+/* line 40, ../../sass/Layout/_mainpass.scss */
+.gym_pass #gym_pass_holder .gym_pass_sub p {
+  width: 253px;
+  height: 30px;
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #e7e7e7;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  text-align: center;
+  margin-top: 56px;
+}
+/* line 51, ../../sass/Layout/_mainpass.scss */
+.gym_pass #gym_pass_holder .gym_pass_sub .btn {
+  position: absolute;
+  bottom: 20px;
+  width: 51px;
+  height: 38px;
+  border: none;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #ec6811;
+  padding: 12px 8px 12px 8px;
+  text-decoration: none;
+}
+/* line 68, ../../sass/Layout/_mainpass.scss */
+.gym_pass #gym_pass_holder .gym_pass_sub .btn:hover {
+  background: #eb7e3b;
+  text-decoration: none;
+}
+
+/* line 78, ../../sass/Layout/_mainpass.scss */
+.NATIONAL_PASS {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #e7e7e7;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  position: absolute;
+  left: 142.297px;
+  top: 1063.6px;
+  z-index: 34;
+}
+
+/* line 1, ../../sass/Layout/_maingoal.scss */
+.our_goal {
+  min-height: 263px;
+}
+/* line 3, ../../sass/Layout/_maingoal.scss */
+.our_goal .our_goal_head {
+  font-size: 24px;
+  font-weight: 900;
+  color: #161616;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  z-index: 244;
+  margin-top: 42px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+/* line 14, ../../sass/Layout/_maingoal.scss */
+.our_goal .our_goal_content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 1, ../../sass/Layout/_footer.scss */
+.footer {
+  height: 71px;
+  background-color: #19212A;
+}
+/* line 4, ../../sass/Layout/_footer.scss */
+.footer .copy_right {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Roboto";
+  color: #efe8e8;
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  padding-top: 40px;
+}

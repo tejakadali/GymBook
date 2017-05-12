@@ -1,0 +1,101 @@
+#tcf-slider{
+	margin-top: 72px;
+}
+
+.main_search_heading{
+	position: absolute;
+	top: 270px;
+	z-index: 1000;
+	  font-size: 36px;
+	font-weight: 900;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  z-index: 79;
+	width: 100%;
+	text-align: center;
+}
+.search_main{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 334px;
+	width: 100%;
+
+	.search_sub{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	.search_place {
+	  border-radius: 2px;
+	  background-color: rgb(255, 255, 255);
+	  box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2),inset 0px 4px 8px 0px rgba(0, 0, 0, 0.34);
+	  width: 265px;
+	  height: 44px;
+	  z-index: 160;
+		img{
+			margin-top: 13px;
+			margin-left: 12px;;
+		}
+	}
+	.search_activities {
+	  border-radius: 2px;
+	  background-color: rgb(255, 255, 255);
+	  box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2),inset 0px 4px 8px 0px rgba(0, 0, 0, 0.34);
+	  width: 275px;
+	  height: 44px;
+	  z-index: 114;
+	  margin-left: 22px;
+	  margin-right: 11px;
+			img{
+			margin-top: 13px;
+			margin-left: 12px;
+				
+		}
+	}
+	.search_submit {
+	  border-radius: 2px;
+	  background-color: rgb(236, 104, 17);
+	  box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2);
+	  width: 114px;
+	  height: 43px;
+	  z-index: 169;
+		position: relative;
+		.search_submit_txt{
+			font-size: 16px;
+			display: block;
+			color:#fff;
+			margin-top: 14px;
+			margin-left: 27px;
+		}
+	}
+	.search_place_select{
+		font-size: 14PX;
+		color: #FFF;
+		height: inherit;
+		width: 239px;
+		float: right;
+		border: 0px;
+		background: transparent;
+		}
+
+
+	.search2_text{
+		font-size: 14PX;
+		color: #FFF;
+		height: inherit;
+		width: 429px;
+		float: right;
+		border: 0px;
+		background: transparent;
+
+				}
+		
+	}
+	
+}
+
+
+
+

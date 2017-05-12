@@ -1,0 +1,83 @@
+.main_iconwrap{
+	width: 80%;
+	margin: 0 auto;
+	.icon_header {
+  font-size: 24px;
+  font-weight: 900;
+  color: rgb(22, 22, 22);
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  z-index: 244;
+	margin-top: 42px;
+}
+	.icon_subheader{
+		@extend .icon_header;
+		margin-top: 22px;
+		 font-weight: 500;
+
+	}
+
+	
+	.icons{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 45px;
+	
+	.icon_container{
+	margin-top: 14px;
+  background-color: transparent;
+  width: 188px;
+  height: 158px;
+  z-index: 5;
+	/*margin-left: 38px;*/	
+		img{
+		position: relative;
+			left: 50%;
+			transform: translate(-50%);
+		margin: 0 auto;
+			margin-top: 40px;
+		}
+		.icon_text{
+			  font-size: 18px;
+			  font-family: "Roboto";
+			  color: rgb(22, 22, 22);
+			  line-height: 1.2;
+			  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+			text-align: center;
+			a:hover{
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(22, 22, 22);
+  line-height: 1.2;
+  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
+  position: absolute;
+  left: 205.203px;
+  top: 819.7px;
+  z-index: 12;
+
+
+			}
+		}
+	}
+	#gym1:hover {
+    content: url(../images/gym1.png);
+	}
+	#yoga1:hover {
+    content: url(../images/yoga1.png);
+	}
+	#zumba1:hover {
+    content: url(../images/zumba1.png);
+	}
+	#karate1:hover {
+    content: url(../images/karate1.png);
+	}
+	#kids1:hover {
+    content: url(../images/kids1.png);
+	}
+		
+		
+}
+}
+
+

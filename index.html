@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>GymBook</title>
+<link href="css/css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/tcf-slider.min.css">
+<link rel="stylesheet" href="css/jquery-customselect-1.9.1.css">
+<link rel="stylesheet" href="css/jquery-customselect-1.9.1.css">
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="nav"><img class="logo" src="images/logo.png"><div class="button1"><a href="#"><span class="button1_text">LOGIN / REGISTER</span></a></div><div class="location_main"><img src="images/location.png" alt="location"><input class="button1_text" type="search" placeholder="Search Your Current City"></div>
+</div>
+
+
+
+	<div id="tcf-slider"></div>
+	
+	<div  class="main_search_heading">Find the best fitness centers around you</div>
+	<div class="search_main"><div class="search_sub">
+		<div class="search_place"><img src="images/location2.png" alt="location">
+		<select id='standard' name='standard' class='custom-select'>
+		  <option value='' selected>Bommanhalli</option>
+		  <option value='1'>SilkBoard</option>
+		  <option value='2'>Madiwala</option>
+		  <option value='3'>Koramangala</option>
+		  <option value='4'>B.T.M layout</option>
+		  <option value='5'>H.S.R Layout</option>
+		</select>
+		</div>
+		<div class="search_activities"><img src="images/search_icon.png" alt="search">
+		
+		<select id='nosearch' name='standard' class='custom-select'>
+		  <option value=''>All Activities</option>
+		  <option value='1'>GYM</option>
+		  <option value='2'>YOGA</option>
+		  <option value='3'>ZUMBA</option>
+		  <option value='4'>KARATE</option>
+		  <option value='5'>KIDS ACTIVITIES</option>
+		</select>
+		
+		</div>
+		<div class="search_submit"><span class="search_submit_txt">SEARCH</span></div></div>
+	</div>
+  <div class="main_iconwrap">
+  <div class="icon_header" style="text-align: center;">EXPLORE</div>
+  <div class="icon_subheader" style="text-align: center;">What are you looking for?</div>
+  <div class="icons">
+    <div class="icon_container"><a href="#"><img id="gym1" src="images/gym.png" alt="gym"><div class="icon_text">GYM</div></a></div>
+    <div class="icon_container"><a href="#"><img id="yoga1" src="images/yoga.png" alt="gym"><div class="icon_text">YOGA</div></a></div>
+    <div class="icon_container"><a href="#"><img id="zumba1" src="images/zumba.png" alt="gym"><div class="icon_text">ZUMBA</div></a></div>
+    <div class="icon_container"><a href="#"><img id="karate1" src="images/karate.png" alt="gym"><div class="icon_text">KARATE</div></a></div>
+    <div class="icon_container"><a href="#"><img id="kids1" src="images/kids.png" alt="gym"><div class="icon_text">KIDS</div></a></div>
+  </div>
+  </div>
+  
+  <div class="gym_pass">
+  <div class="gym_heading icon_header">GYMBOOK PASS</div>
+  <div id="gym_pass_holder">
+    <div class="gym_pass_sub"><p>NATIONAL PASS</p>
+      <button class="btn">VIEW</button></div>
+    <div class="gym_pass_sub"><p>PREMIUM PASS</p>
+      <button class="btn">VIEW</button></div>
+    <div class="gym_pass_sub"><p>ECONOMY PASS</p>
+      <button class="btn">VIEW</button></div>
+    <div class="gym_pass_sub"><p>COUPLE PASS</p>
+      <button class="btn">VIEW</button></div>
+  </div>
+  </div>
+
+ <div class="our_goal">
+ 	<div class="our_goal_head">OUR GOAL</div>
+ 	<div class="our_goal_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin, est at efficitur dapibus, magna felis aliquet est, eget interdum neque massa eget turpis. Etiam purus lectus, auctor a viverra at, laoreet convallis risus. Phasellus vel semper purus. Nunc gravida arcu lorem, sit amet feugiat nibh auctor eget. Phasellus viverra sit amet leo vitae consectetur. Phasellus elementum vitae justo eu auctor. Etiam arcu justo, tincidunt egestas congue vitae, feugiat sed ligula.Curabitur ut dapibus erat. Aliquam eu elementum eros, non volutpat metus. Duis et consectetur metus. Vestibulum fringilla ultrices nunc. Morbi tempor, ex quis eleifend lobortis, elit nulla rutrum lorem, quis egestas orci turpis vel nunc. Quisque felis erat, fringilla et efficitur eu, fringilla sit amet ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ante diam, euismod nec ex et, dapibus ultrices odio.</div>
+ </div>
+ 
+ <div class="footer">
+ 	<p class="copy_right">Copyright 2017</p>
+ </div>
+
+</div>	
+</body>
+
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+ <script src="js/tcf-slider.min.js"></script>
+ <script src="js/jquery-customselect-1.9.1.min.js"></script>
+<script>
+	$('#tcf-slider').tcf_slider({
+
+  // an array of images
+  images: [
+	  {
+    src: "images/1.jpg"
+  }, {
+    src: "images/2.jpg"
+  }, {
+	src:  "images/3.jpg"
+  }
+  ], 
+
+  // enable carousel mode
+  loop: true,
+
+  // autoplay
+  autoChange: true,
+
+  // 'slide', 'fade' or 'none'
+  transition: "slide",
+
+  // autoplay interval
+  changeInterval: 4000,
+
+  // transition duration
+  transitionDuration: 400
+  
+})
+	</script>
+<script>
+	$(function() {
+  $("#standard").customselect();
+	$("#nosearch").customselect({search: false});
+
+});
+
+</script>
+<script>
+		$(".custom-select").eq(1).css("width", "400px" );
+</script>
+
+
+</html>
+
