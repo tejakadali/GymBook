@@ -18,65 +18,6 @@ body {
   background-color: #f1ebeb;
 }
 
-/* line 1, ../../sass/Layout/_selectloc.scss */
-.select_loc {
-  background-color: rgba(22, 22, 22, 0.9);
-  position: fixed;
-  margin: 5% auto;
-  left: 0;
-  right: 0;
-  width: 50.14%;
-  height: 290px;
-  z-index: 3000;
-}
-/* line 11, ../../sass/Layout/_selectloc.scss */
-.select_loc div {
-  padding-top: 30px;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 25px;
-  font-weight: 600;
-  font-family: "Roboto";
-  color: #efe8e8;
-  line-height: 1.2;
-  z-index: 3010;
-}
-/* line 24, ../../sass/Layout/_selectloc.scss */
-.select_loc .city_holder {
-  display: flex;
-  margin-top: 20px;
-}
-/* line 27, ../../sass/Layout/_selectloc.scss */
-.select_loc .city_holder .city_name {
-  cursor: pointer;
-  border-width: 2px;
-  border-color: white;
-  border-style: solid;
-  width: 249px;
-  height: 107px;
-  z-index: 7;
-}
-/* line 36, ../../sass/Layout/_selectloc.scss */
-.select_loc .city_holder .city_name p:nth-child(1) {
-  margin-top: 30px;
-  font-size: 20px;
-  font-family: "Roboto";
-  color: #e7e7e7;
-  line-height: 1.2;
-  text-shadow: 0px 3px 7.84px rgba(0, 0, 0, 0.31);
-  z-index: 8;
-}
-/* line 48, ../../sass/Layout/_selectloc.scss */
-.select_loc .city_holder .city_name:hover {
-  background-color: #F5A838;
-}
-
-/* line 1, ../../sass/Layout/_addclass.scss */
-.blur {
-  filter: blur(5px);
-}
-
 /* Scss Document */
 /* line 4, ../../sass/Layout/_header.scss */
 .wrapper {
@@ -111,42 +52,27 @@ body {
   float: right;
   margin-top: 20px;
   margin-right: 22px;
-  		/*input{
-  			height: inherit;
-  			width: 183px;
-  			border: none;
-  			background: none;
-  			float: right;
-  			&::placeholder {
-  				font-size: 14px;
-    				color: #fff;
-  				font-weight: 400;
-  							}
-  		}  */
 }
 /* line 33, ../../sass/Layout/_header.scss */
 .nav .location_main img {
-  height: 25px;
+  margin-top: 9px;
   margin-left: 10px;
 }
-/* line 50, ../../sass/Layout/_header.scss */
-.nav .location_main .locationchange {
+/* line 37, ../../sass/Layout/_header.scss */
+.nav .location_main input {
   height: inherit;
-  width: inherit;
+  width: 183px;
+  border: none;
   background: none;
+  float: right;
+}
+/* line 43, ../../sass/Layout/_header.scss */
+.nav .location_main input::placeholder {
   font-size: 14px;
-  font-family: "Roboto";
-  color: white;
-  padding-left: 20px;
-}
-/* line 60, ../../sass/Layout/_header.scss */
-.nav .location_main .locationchange option {
-  margin: 40px;
-  background: #161616;
   color: #fff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  font-weight: 400;
 }
-/* line 78, ../../sass/Layout/_header.scss */
+/* line 51, ../../sass/Layout/_header.scss */
 .nav .button1 {
   border-radius: 2px;
   background-color: #ec6811;
@@ -157,7 +83,7 @@ body {
   margin-top: 20px;
   float: right;
 }
-/* line 88, ../../sass/Layout/_header.scss */
+/* line 61, ../../sass/Layout/_header.scss */
 .nav .button1 .button1_text {
   display: block;
   font-size: 14PX;
@@ -208,7 +134,7 @@ body {
   box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2), inset 0px 4px 8px 0px rgba(0, 0, 0, 0.34);
   width: 265px;
   height: 44px;
-  z-index: 1200;
+  z-index: 1000;
 }
 /* line 36, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_place img {
@@ -218,21 +144,18 @@ body {
 /* line 41, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_place input {
   height: inherit;
-  width: 237px;
+  width: 183px;
   border: none;
   background: none;
   float: right;
-  color: #000;
-  font-size: 14px;
-  padding-left: 20px;
 }
-/* line 53, ../../sass/Layout/_slider.scss */
+/* line 47, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_place input::placeholder {
   font-size: 14px;
-  color: #000;
+  color: #fff;
   font-weight: 400;
 }
-/* line 62, ../../sass/Layout/_slider.scss */
+/* line 56, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_activities {
   border-radius: 2px;
   background-color: white;
@@ -243,36 +166,29 @@ body {
   margin-right: 11px;
   z-index: 1000;
 }
-/* line 72, ../../sass/Layout/_slider.scss */
+/* line 66, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_activities img {
   margin-top: 13px;
   margin-left: 12px;
 }
-/* line 78, ../../sass/Layout/_slider.scss */
+/* line 72, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_submit {
   border-radius: 2px;
   background-color: #ec6811;
   box-shadow: 0px 3px 4.9px 0.1px rgba(0, 0, 0, 0.2);
   height: 43px;
-  width: 114px;
   z-index: 1000;
   position: relative;
 }
-/* line 86, ../../sass/Layout/_slider.scss */
+/* line 79, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_submit .search_submit_txt {
-  background: none;
-  border: none;
-  width: inherit;
-  height: inherit;
   font-size: 16px;
   display: block;
   color: #fff;
+  margin-top: 14px;
+  margin-left: 27px;
 }
-/* line 95, ../../sass/Layout/_slider.scss */
-.search_main .search_sub .search_submit .search_submit_txt:hover {
-  background: #F79821;
-}
-/* line 99, ../../sass/Layout/_slider.scss */
+/* line 87, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search_place_select {
   font-size: 14PX;
   color: #FFF;
@@ -282,7 +198,7 @@ body {
   border: 0px;
   background: transparent;
 }
-/* line 110, ../../sass/Layout/_slider.scss */
+/* line 98, ../../sass/Layout/_slider.scss */
 .search_main .search_sub .search2_text {
   font-size: 14PX;
   color: #FFF;
@@ -291,11 +207,6 @@ body {
   float: right;
   border: 0px;
   background: transparent;
-}
-
-/* line 125, ../../sass/Layout/_slider.scss */
-.ui-autocomplete {
-  z-index: 9999 !important;
 }
 
 /* line 1, ../../sass/Layout/_mainicons.scss */
@@ -365,23 +276,23 @@ body {
 }
 /* line 63, ../../sass/Layout/_mainicons.scss */
 .main_iconwrap .icons #gym1:hover {
-  content: url(../../images/gym1.png);
+  content: url(../images/gym1.png);
 }
 /* line 66, ../../sass/Layout/_mainicons.scss */
 .main_iconwrap .icons #yoga1:hover {
-  content: url(../../images/yoga1.png);
+  content: url(../images/yoga1.png);
 }
 /* line 69, ../../sass/Layout/_mainicons.scss */
 .main_iconwrap .icons #zumba1:hover {
-  content: url(../../images/zumba1.png);
+  content: url(../images/zumba1.png);
 }
 /* line 72, ../../sass/Layout/_mainicons.scss */
 .main_iconwrap .icons #karate1:hover {
-  content: url(../../images/karate1.png);
+  content: url(../images/karate1.png);
 }
 /* line 75, ../../sass/Layout/_mainicons.scss */
 .main_iconwrap .icons #kids1:hover {
-  content: url(../../images/kids1.png);
+  content: url(../images/kids1.png);
 }
 
 /* line 1, ../../sass/Layout/_mainpass.scss */
@@ -512,21 +423,9 @@ body {
   padding-top: 40px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   /* line 2, ../../sass/Layout/_responsive.scss */
   .main_search_heading {
     top: 200px;
-  }
-
-  /* line 8, ../../sass/Layout/_responsive.scss */
-  .select_loc {
-    width: 90%;
-    max-height: 250px;
-  }
-  /* line 11, ../../sass/Layout/_responsive.scss */
-  .select_loc .city_holder .city_name {
-    width: 100%;
-    height: auto;
-    padding-bottom: 20px;
   }
 }

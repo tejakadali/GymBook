@@ -3,16 +3,34 @@
 <head>
 
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GymBook</title>
-<link href="css/css/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/tcf-slider.min.css">
-<link rel="stylesheet" href="css/jquery-customselect-1.9.1.css">
-<link rel="stylesheet" href="css/jquery-customselect-1.9.1.css">
-
+	<link href="css/css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/tcf-slider.min.css">
+	<link rel="stylesheet" href="css/jquery-customselect-1.9.1.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/tcf-slider.min.js"></script>
+		<script src="js/jquery-customselect-1.9.1.min.js"></script>
 </head>
 <body>
-<div class="wrapper">
-  <div class="nav"><img class="logo" src="images/logo.png"><div class="button1"><a href="#"><span class="button1_text">LOGIN / REGISTER</span></a></div><div class="location_main"><img src="images/location.png" alt="location"><input class="button1_text" type="search" placeholder="Search Your Current City"></div>
+<div class="select_loc">
+<div>PLEASE SELECT CITY TO CONTINUE</div>
+<div class="city_holder">
+  <div class="city_name"><p>BANGLORE</p></div>
+  <div class="city_name"><p>HYDERABAD</p></div>
+</div>
+</div>
+<div class="wrapper blur">
+  <div class="nav"><img class="logo" src="images/logo.png"><div class="button1"><a href="#"><span class="button1_text">LOGIN / REGISTER</span></a></div><div class="location_main">
+    <select class="locationchange" name='locationchange'>
+		  <option value='gym'>BANGLORE</option>
+	  <option value='yoga'>HYDERABAD</option></select>
+  
+  <!--<input class="button1_text" type="search" placeholder="Search Your Current City">-->
+  </div>
 </div>
 
 
@@ -20,31 +38,36 @@
 	<div id="tcf-slider"></div>
 	
 	<div  class="main_search_heading">Find the best fitness centers around you</div>
-	<div class="search_main"><div class="search_sub">
+	<form action="/main.html" method="get"><div class="search_main"><div class="search_sub">
 		<div class="search_place"><img src="images/location2.png" alt="location">
-		<select id='standard' name='standard' class='custom-select'>
+			<input style="z-index: 1300;" id="tags" type="search" name="location" placeholder="Location">
+		<!--<select id='standard' name='standard' class='custom-select'>
 		  <option value='' selected>Bommanhalli</option>
 		  <option value='1'>SilkBoard</option>
 		  <option value='2'>Madiwala</option>
 		  <option value='3'>Koramangala</option>
 		  <option value='4'>B.T.M layout</option>
 		  <option value='5'>H.S.R Layout</option>
-		</select>
+		</select>-->
 		</div>
 		<div class="search_activities"><img src="images/search_icon.png" alt="search">
 		
-		<select id='nosearch' name='standard' class='custom-select'>
+		<select id='nosearch' name='activity' class='custom-select'>
 		  <option value=''>All Activities</option>
-		  <option value='1'>GYM</option>
-		  <option value='2'>YOGA</option>
-		  <option value='3'>ZUMBA</option>
-		  <option value='4'>KARATE</option>
-		  <option value='5'>KIDS ACTIVITIES</option>
+		  <option value='gym'>GYM</option>
+		  <option value='yoga'>YOGA</option>
+		  <option value='zumba'>ZUMBA</option>
+		  <option value='karate'>KARATE</option>
+		  <option value='kids'>KIDS ACTIVITIES</option>
 		</select>
 		
 		</div>
-		<div class="search_submit"><span class="search_submit_txt">SEARCH</span></div></div>
+		
+		<div class="search_submit"><input class="search_submit_txt" type="submit" value="SEARCH	"></div>
+		
+		</div>
 	</div>
+	</form>
   <div class="main_iconwrap">
   <div class="icon_header" style="text-align: center;">EXPLORE</div>
   <div class="icon_subheader" style="text-align: center;">What are you looking for?</div>
@@ -83,9 +106,9 @@
 </div>	
 </body>
 
-<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
- <script src="js/tcf-slider.min.js"></script>
- <script src="js/jquery-customselect-1.9.1.min.js"></script>
+
+ 
+ 
 <script>
 	$('#tcf-slider').tcf_slider({
 
